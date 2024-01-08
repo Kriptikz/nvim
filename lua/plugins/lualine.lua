@@ -10,7 +10,7 @@ return {
           theme = 'dracula'
         },
         sections = {
-          lualine_c = {
+          lualine_d = {
             'lsp_progress'
           }
         }
