@@ -6,15 +6,17 @@ return {
   config = function()
     require("neorg").setup {
       load = {
-        ["core.defaults"] = {},    -- Loads default behaviour
-        ["core.concealer"] = {},   -- Adds pretty icons to your documents
-        ["core.dirman"] = {        -- Manages Neorg workspaces
+        ["core.defaults"] = {},  -- Loads default behaviour
+        ["core.concealer"] = {}, -- Adds pretty icons to your documents
+        ["core.summary"] = {}, -- Adds pretty icons to your documents
+        ["core.dirman"] = {      -- Manages Neorg workspaces
           config = {
             workspaces = {
+              notes = "~/notes",
               personal = "~/notes/personal",
               work = "~/notes/work",
             },
-            default_workspace = "personal"
+            default_workspace = "notes",
           },
         },
       },
