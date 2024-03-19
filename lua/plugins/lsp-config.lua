@@ -68,6 +68,10 @@ return {
       vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
       vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+
+      -- copy to clipboard
+      vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+      vim.keymap.set("n", "<leader>Y", [["+Y]])
     end
   }
 }
